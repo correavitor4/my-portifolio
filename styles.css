@@ -68,6 +68,8 @@ body{
     padding: 70px;
     display: flex;
     flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #slogan-div{
@@ -80,28 +82,152 @@ body{
     width: 100%;
 }
 
+
 .first-content-div h1{
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 30px;
+    font-size: 39px;
     font-weight: 300;
     color: #000000;
     text-align: left;
     /* min */
-    padding-top: 20px;
+    padding-top: 190px;
+    animation: fadeIn1 2s;
+}
+
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+    }
+    9%{
+        opacity: 0.28;
+    }
+    18%{
+        opacity: 0.35;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .first-content-div h3{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+    text-align: left;
+    padding-top: 60px;
+    width: 100%;
+    /* background-color: blue; */
+    animation: fadeIn2 3s;
+}
+
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#my-links-div{
+    /* background-color: aquamarine; */
+    height: 70px;
+    padding-top: 200px;
+    margin-right: 160px;
+    display: flex;
+    flex-direction: row;
+    animation: fadeIn3 6s;
+}
+
+@keyframes fadeIn3 {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.links-icons-and-text{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.links-icons-and-text p{
     font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
     font-weight: 300;
     color: #000000;
     text-align: left;
-    padding-top: 20px;
-    width: 100%;
-    /* background-color: blue; */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-@media (max-width: 560px) {
+.links-icons-and-text img{
+    width: 37px;
+    height: 37px;
+}
+
+@media (max-width: 700px) {
+
+    header{
+        height: 10%;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1{
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        color: #000000;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    #my-links-div{
+        height: 70px;
+        margin-right: 0;
+        padding-top: 160px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .links-icons-and-text p{
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: #000000;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .links-icons-and-text img{
+        width: 25px;
+        height: 25px;
+    }
 
     .first-content-div{
         /* width: 100%; */
@@ -109,6 +235,8 @@ body{
         padding: 0;
         /* background-color: blueviolet; */
         min-width: 100%;
+        justify-content: center;
+        height: 90%;
     }
 
     #slogan-div{
