@@ -35,8 +35,17 @@ body{
     
 }
 
+.my-description-text{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+}
+
+#my-photo{
+    /* border-radius: 50%; */
+    width: 500px;
+}
+
 .content-divs{
-    height: 800px;
     /* background-color: pink; */
     /* border: solid 1px black; */
     display: flex;
@@ -44,6 +53,7 @@ body{
     opacity: 0.9;
     /* background-color: brown; */
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .fa-solid fa-bars{
@@ -53,7 +63,7 @@ body{
 
 #my-title-name{
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 300;
     color: #000000;
     text-align: center;
@@ -148,11 +158,34 @@ body{
     /* background-color: aquamarine; */
     height: 70px;
     padding-top: 200px;
+    padding-bottom: 200px;
     margin-right: 160px;
     display: flex;
     flex-direction: row;
     animation: fadeIn3 6s;
 }
+
+#line{
+    width: 100%;
+    background-color: #000000;
+    height: 9px;
+    margin-top: 30px;
+}
+
+.my-description-text{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex: 1;
+}
+
+#my-description{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @keyframes fadeIn3 {
     0% {
@@ -217,6 +250,33 @@ body{
         padding-top: 160px;
         display: flex;
         flex-direction: row;
+    }
+
+    #line{
+        display: none;
+    }
+
+    .my-description-text{
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    #my-photo{
+        width: 80%;
+        height: 80%;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .links-icons-and-text p{
